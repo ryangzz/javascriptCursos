@@ -1,3 +1,4 @@
+// Practica con arreglos y POO en JS en su ECMAC6
 let juegos = ["zelda", "Mario", "Mario Car"];
 
 class Arreglos{
