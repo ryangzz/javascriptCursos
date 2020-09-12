@@ -9,6 +9,10 @@ console.log(`returno Suma desde funcion flecha anonima: ${retornoFFA}`);
 // Funcion flecha con retorno y argumentos
 const sumar =(a,b)=>a+b;
 console.log("Suma desde funcion flecha: "+sumar(2,3));
+// Rerotnando argumentos
+const argumentos0 = (a, b) => ({a, b});
+let args = argumentos0("pedro", "miza");
+console.log(args);
 // Funcion flecha, midiendo sus argumentos
 const argumentos = (...arguments)=> arguments.length;
 console.log("El numero de argumentos de una funcion flecha: "+argumentos(1,2,3,4));
@@ -34,7 +38,7 @@ const argumentos3 = (...args)=>{
     let otros = [];
     numeros = args.filter(elem=>typeof elem=="number");
     otros = args.filter(elem=>typeof elem != "number");
-    return {numeros:numeros, otros:otros};
+    return {numeros, otros};
 }
 let elemetosSeparados = argumentos3(2,3,2,3,2, "uno", [1,2,3], {numero:2});
 console.log(elemetosSeparados);
