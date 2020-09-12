@@ -5,7 +5,7 @@ form.addEventListener("submit", function (e){
     // evitar hacer submit
     e.preventDefault();
     // Obtenemos todos los elementos inputs del formularios
-    let inputs = [].slice.call(e.target.getElementsByTagName('input'));
+    let inputs = [...e.target.getElementsByTagName('input')];
     // Incialicamos objeto literal persona que tendra la informacion capturada y otras dos variables
     // que contendran la informacion separada
     let persona ={};
