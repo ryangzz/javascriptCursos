@@ -31,5 +31,3 @@ let furtas3 = ["Melon", "Sandia"];
 let frutas4 = [...furtas3];
 frutas4.push("Guayaba");
 console.table({furtas3, frutas4});
-
-
