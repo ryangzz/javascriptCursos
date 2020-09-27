@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,32 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="titulo">Black Jack</header>
     <div class="row mt-2">
-        <div class="col text-center">
-            <button class="btn btn-danger">Nuevo Juego</button>
-            <button class="btn btn-primary">Pedir Carta</button>
-            <button class="btn btn-primary">Detener</button>
+        <div id="botones" class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
         </div>
     </div>
     <div class="row container">
         <div class="col">
-        <h1>Jugador  - <small>0</small></h1>
+            <h1>Jugador - <small>0</small></h1>
             <div id="jugador-cartas">
-                <img class="carta" src="assets/img/2C.png" alt="carta">
-                <img class="carta" src="assets/img/2C.png" alt="carta">
-                <img class="carta" src="assets/img/2C.png" alt="carta">
-                <img class="carta" src="assets/img/2C.png" alt="carta">
             </div>
         </div>
     </div>
     <div class="row container">
         <div class="col">
-        <h1>Computadora - <small>0</small></h1>
+            <h1>Computadora - <small>0</small></h1>
             <div id="computadora-cartas">
-                <img class="carta" src="assets/img/4C.png" alt="carta">
-                <img class="carta" src="assets/img/4C.png" alt="carta">
-                <img class="carta" src="assets/img/4C.png" alt="carta">
-                <img class="carta" src="assets/img/4C.png" alt="carta">
             </div>
         </div>
     </div>
     <script src="assets/js/underscop-min.js"></script>
     <script src="assets/js/juego.js"></script>
 </body>
+
 </html>
