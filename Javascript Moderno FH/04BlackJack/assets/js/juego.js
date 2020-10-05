@@ -52,9 +52,9 @@ const turnoComputadora = (puntosMinimos) => {
     setTimeout(() => { //En este punto de la rutina se determina quien gano
         if (puntosComputadora === puntosMinimos) {
             alert("Nadie Gano");
-        } else if (puntosMinimos > 21 || puntosComputadora === 21 && ((puntosComputadora < 21) && (puntosComputadora > puntosMinimos))) {
+        } else if (puntosMinimos > 21 || puntosComputadora === 21 || ((puntosComputadora < 21) && (puntosComputadora > puntosMinimos))) {
             alert("Perdiste, gano la computadora");
-        } else if (puntosComputadora > 21 || puntosMinimos === 21 && ((puntosMinimos < 21) && (puntosComputadora < puntosMinimos))) {
+        } else if (puntosComputadora > 21 || puntosMinimos === 21 || ((puntosMinimos < 21) && (puntosComputadora < puntosMinimos))) {
             alert("Ganaste!!");
         }
     }, 120);
